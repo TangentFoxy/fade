@@ -142,4 +142,8 @@ function love.keypressed(key)
     if key == "c" then
         lines = {}
     end
+
+    if key == "o" then
+        love.system.openURL(love.filesystem.getSaveDirectory())
+    end
 end
