@@ -1,5 +1,6 @@
 function love.conf(t)
     t.title = "FADE"
+    t.identity = "FADE"
     --t.console = true --tmp
 
     --local w, h = love.window.getDesktopDimensions()
