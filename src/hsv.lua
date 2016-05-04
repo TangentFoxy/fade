@@ -9,23 +9,23 @@ local function hue_to_rgb(hue)
         r = c
         g = x
         b = 0
-    elseif hue < 120
+    elseif hue < 120 then
         r = x
         g = c
         b = 0
-    elseif hue < 180
+    elseif hue < 180 then
         r = 0
         g = c
         b = x
-    elseif hue < 240
+    elseif hue < 240 then
         r = 0
         g = x
         b = c
-    elseif hue < 300
+    elseif hue < 300 then
         r = x
         g = 0
         b = c
-    elseif hue < 360
+    else
         r = c
         g = 0
         b = x
