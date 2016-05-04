@@ -134,6 +134,9 @@ function love.keypressed(key)
 
     if key == "b" then
         blacknwhite = not blacknwhite
+        if not blacknwhite then
+            swatch = 4
+        end
     end
 
     if key == "c" then
