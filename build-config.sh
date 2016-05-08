@@ -31,15 +31,15 @@ loveVersion="0.10.1"
 
 # Modified love executables (optional)
 # (The default values are where the default exe's will be extracted)
-win32exe="$win32Dir/love-$loveVersion-win32/love.exe"
-win64exe="$win64Dir/love-$loveVersion-win64/love.exe"
+win32exe="$(pwd)/build-scripts/love.32.exe"
+win64exe="$(pwd)/build-scripts/love.64.exe"
 
 # Mac icns files for package icon
 # (It's best to just specify the same file for both?
 # I don't think both are needed, but I am not very familiar with the Mac system.)
-osxIconsDirectory="$osx10Dir/love.app/Contents/Resources"
-osxFileIcon="GameIcon.icns"
-osxBundleIcon="OS X AppIcon.icns"
+osxIconsDirectory="$(pwd)/images/icons"
+osxFileIcon="256x256.icns"
+osxBundleIcon="256x256.icns"
 
 # Remove old packages?
 removeOld=true
